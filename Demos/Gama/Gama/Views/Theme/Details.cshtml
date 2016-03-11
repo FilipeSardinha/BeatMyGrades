@@ -1,0 +1,36 @@
+﻿@model Gama.Models.Theme
+@{
+    Layout = "~/Views/Shared/Members.cshtml";
+}
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Theme</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Topic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Topic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubTopic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubTopic)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ThemeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
