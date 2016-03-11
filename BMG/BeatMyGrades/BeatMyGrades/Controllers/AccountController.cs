@@ -134,7 +134,7 @@ namespace BeatMyGrades.Controllers
                     smtp.EnableSsl = true;
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
-                    smtp.Credentials = new System.Net.NetworkCredential("happenz.works@gmail.com", "Wqbvjeq5rx");
+                    smtp.Credentials = new System.Net.NetworkCredential("happenz.works@gmail.com", "d");
                     
                     smtp.Send(m); 
 
